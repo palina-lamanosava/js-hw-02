@@ -51,13 +51,13 @@ const addLogin = function (allLogins, login) {
     isLoginUnique(logins, login);
 
     if (numberOfLetters === false) {
-        return console.log("Ошибка! Логин должен быть от 4 до 16 символов");  
+        return "Ошибка! Логин должен быть от 4 до 16 символов";  
     }
     else if (uniqResult === false) {
-         return console.log('Такой логин уже используется!');
+         return 'Такой логин уже используется!';
     } else {
         allLogins.push(login);
-         return console.log('Логин успешно добавлен!');
+         return 'Логин успешно добавлен!';
     }
  
 };
